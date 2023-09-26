@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.multiplier-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.multiplier {
+    flex: 1;
+    padding: 10px;
+    background-color: #eaeaea;
+    border-radius: 4px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.green-highlight {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+
+/* Your existing styles */
+
+/* Responsive styles */
+
+.container {
+    width: 100%;
+    max-width: 1200px; /* can adjust based on preference */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box; /* ensures padding doesn't affect the total width */
+}
+
+.multiplier-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* spacing between elements */
+}
+
+.multiplier {
+    padding: 10px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.green-highlight {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* For tablets and below */
+@media (max-width: 768px) {
+    .multiplier-container {
+        gap: 15px;
+    }
+
+    .multiplier {
+        padding: 8px;
+        font-size: 14px; /* reduce font-size if necessary */
+    }
+}
+
+/* For mobile devices and below */
+@media (max-width: 480px) {
+    .multiplier-container {
+        gap: 10px;
+    }
+
+    .multiplier {
+        padding: 5px;
+        font-size: 12px; /* reduce font-size further for smaller devices */
+    }
+}
