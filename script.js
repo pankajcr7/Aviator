@@ -1,4 +1,4 @@
-function generateMultiplier() {
+functin generateMultiplier() {
     let multiplier;
     do {
         multiplier = +(Math.random() * 1000).toFixed(2);
